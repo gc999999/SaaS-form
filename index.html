@@ -54,7 +54,7 @@
       fields.images = uploadedImages;
 
       // 發送 webhook（改成你的 n8n Webhook 或自建 API）
-      const res = await fetch("https://your-n8n-webhook-url", {
+      const res = await fetch("http://localhost:5678/webhook-test/9191ed17-9ec5-47ed-8840-78b5a7cde98c", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
